@@ -1,0 +1,11 @@
+use_frameworks!
+
+target 'Pasteboard_Example' do
+  pod 'Pasteboard', :path => '../'
+
+  target 'Pasteboard_Tests' do
+    inherit! :search_paths
+
+    
+  end
+end

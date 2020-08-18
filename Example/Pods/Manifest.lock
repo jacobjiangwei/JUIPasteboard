@@ -1,0 +1,16 @@
+PODS:
+  - Pasteboard (0.1.0)
+
+DEPENDENCIES:
+  - Pasteboard (from `../`)
+
+EXTERNAL SOURCES:
+  Pasteboard:
+    :path: "../"
+
+SPEC CHECKSUMS:
+  Pasteboard: 29aa4d8e5f2e66d161835011259702078e484e09
+
+PODFILE CHECKSUM: 4ff9af605122493596a3f2ebe3262ef1cd8e7e9f
+
+COCOAPODS: 1.9.3
