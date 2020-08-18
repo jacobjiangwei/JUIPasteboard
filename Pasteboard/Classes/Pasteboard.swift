@@ -17,6 +17,8 @@ public struct PasteImageData {
 }
 
 public class Pasteboard {
+    public init() {}
+    
     var plainText: String?
     var images: [UIImage] = [] // store image data as UIImage into UIPasteboard
     var imageData: [PasteImageData] = [] // read pasteboard images as data, easy to upload
