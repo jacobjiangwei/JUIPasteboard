@@ -9,14 +9,14 @@ import Foundation
 import MobileCoreServices
 import UIKit
 
-struct PasteImageData {
+public struct PasteImageData {
     var width: CGFloat
     var height: CGFloat
     var type: String
     var data: Data
 }
 
-class Pasteboard {
+public class Pasteboard {
     var plainText: String?
     var images: [UIImage] = [] // store image data as UIImage into UIPasteboard
     var imageData: [PasteImageData] = [] // read pasteboard images as data, easy to upload
