@@ -19,12 +19,12 @@ public struct PasteImageData {
 public class Pasteboard {
     public init() {}
     
-    var plainText: String?
-    var images: [UIImage] = [] // store image data as UIImage into UIPasteboard
-    var imageData: [PasteImageData] = [] // read pasteboard images as data, easy to upload
-    var pdfData: [Data] = []
+    public var plainText: String?
+    public var images: [UIImage] = [] // store image data as UIImage into UIPasteboard
+    public var imageData: [PasteImageData] = [] // read pasteboard images as data, easy to upload
+    public var pdfData: [Data] = []
 
-    func readPasteboard() {
+    public func readPasteboard() {
         readText()
         readItems()
         convertAllImageToPngData()
@@ -42,7 +42,7 @@ public class Pasteboard {
         }
     }
 
-    func saveToPasteboard() {
+    public func saveToPasteboard() {
         UIPasteboard.general.items = []
         UIPasteboard.general.string = ""
         UIPasteboard.general.images = []
